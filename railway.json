@@ -5,13 +5,10 @@
   },
   "deploy": {
     "runtime": "V2",
+    "numReplicas": 1,
     "multiRegionConfig": {
-      "us-west1": {
-        "numReplicas": 1
-      },
-      "us-east4": {
-        "numReplicas": 1
-      }
+      "us-west1": {},
+      "us-east4": {}
     },
     "startCommand": "bun run index.ts"
   }
